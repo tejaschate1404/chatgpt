@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
+</head>
+<body>
+    <h1>Welcome to ChatGPT Clone</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="responses"></div>
+</body>
+</html>
