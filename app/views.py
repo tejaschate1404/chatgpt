@@ -21,4 +21,4 @@ def get_chatgpt_response(user_input):
     }
 
     response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=data)
-    return response.json()['choices'][0]['message']['content'] if response.status_code == 200 else "Error"
+    return response.json()['choices'][0]['message']['content'] if response.status_code == 200 else "Erroreeeee"
